@@ -16,7 +16,7 @@ The repository is organized as follows:
 ## Tasks Accomplished
 
 1. **Retrieve All Rows and Columns**: I started by fetching all rows and columns from the "hero_battles" table to gain a comprehensive understanding of the dataset.
-   
+   ```
     use heroes;
     select * from hero_battles;
     ```
