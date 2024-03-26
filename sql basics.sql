@@ -1,21 +1,27 @@
-use heroes;
-select*from hero_battles
-order by num_enemies;
+SQL Project: Hero Battles Analysis
+Welcome to my SQL Project repository! In this project, I've demonstrated proficiency in crafting SQL queries by working with the "hero_battles" dataset.
 
-select*from hero_battles
-order by num_enemies desc;
+Project Overview
+This repository contains SQL scripts and documentation for my SQL Project on Hero Battles Analysis. The dataset used in this project pertains to hero battles, and the SQL queries provided below demonstrate various querying tasks performed on this dataset.
 
-select*from hero_battles
-where name = "batman"
-order by num_enemies desc;
+Project Structure
+The repository is organized as follows:
 
-select*from hero_battles
-where not name = "batman"
-order by num_enemies;
+sql_basics.sql: This SQL script contains the queries used to perform various tasks on the "hero_battles" dataset.
+README.md: You're currently reading it! This file provides an overview of the project, including instructions and descriptions of the SQL queries.
+Tasks Accomplished
+Retrieve All Rows and Columns: I started by fetching all rows and columns from the "hero_battles" table to gain a comprehensive understanding of the dataset.
 
-select*from hero_battles where num_enemies in (1,2);
+ use heroes;
+ select * from hero_battles;
+Retrieve First 5 Rows: Next, I fetched only the first 5 rows from the "hero_battles" table to provide a concise overview of the initial dataset.
 
-select*from hero_battles where num_enemies in (1,2,10,12);
+select * from hero_battles limit 5;
+Select Date Column with Alias: I selectively retrieved the date column from the "hero_battles" table, utilizing an alias to rename it to "timestamp" for clarity and consistency.
 
-select*from hero_battles
-where name like "%man%";
+select date as timestamp from hero_battles;
+Select Specific Columns with Aliases: To enhance readability and relevance, I chose to alias the "hero_battles" table as "hb". Additionally, I selected only the "name" and "num_enemies" columns, renaming them to "hero_name" and "number_of_enemies", respectively.
+
+ select name as hero_name, num_enemies as number_of_enemies 
+ from hero_battles as hb 
+ limit 4;
