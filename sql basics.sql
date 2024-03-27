@@ -3,10 +3,10 @@ sql_basics.sql: This SQL script contains the queries used to perform various tas
 
  
 1. Retrieve All Rows and Columns: I started by fetching all rows and columns from the "hero_battles" table to gain a comprehensive understanding of the dataset.
-```
+
  use heroes;
  select * from hero_battles;
-```
+
 2. Retrieve First 5 Rows: Next, I fetched only the first 5 rows from the "hero_battles" table to provide a concise overview of the initial dataset.
 
 select * from hero_battles limit 5;
